@@ -42,7 +42,7 @@ optionUpdate();
 
 let exchangeRate = async () => {
     
-    if (amount.value == 0 || amount.value < 0){
+    if (amount.value <= 0 || amount.value == " "){
       amount.value = 1 ;
     }
     let amountval = amount.value;
